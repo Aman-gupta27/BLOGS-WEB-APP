@@ -2,8 +2,9 @@ import { IconSearch } from '@tabler/icons-react';
 import { Autocomplete, Burger, Group } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { MantineLogo } from '@mantinex/mantine-logo';
+import { CiSearch } from "react-icons/ci";
 import classes from './HeaderSearch.module.css';
-
+import { FiSearch } from "react-icons/fi";
 // import '@mantine/core/styles.css';
 
 const links = [
@@ -34,13 +35,10 @@ export function HeaderSearch() {
             <img className='h-[4vh]' src="https://ik.imagekit.io/sheryians/Sheryians_logo_EzwgcppnD" alt="" />
           <h1 className='text-3xl font-medium'>Sheryians</h1>
         <Group>
-          <Autocomplete
-            className='w-full bg-red-100 '
-            placeholder="Search"
-            leftSection={<IconSearch size={16} stroke={1.5} />}
-            data={['React', 'Angular', 'Vue', 'Next.js', 'Riot.js', 'Svelte', 'Blitz.js']}
-            visibleFrom="xs"
-          />
+          <div className='w-[25vw] rounded-xl ml-10 flex items-center gap-2 bg-[#E8E8E8] px-2 py-2'>
+          <FiSearch className='text-xl text-[#666666] font-bold'/>
+          <input className='placeholder:text-lg placeholder:text-[#666666] outline-none'  type="text" placeholder='Search Blogs' />
+          </div>
         </Group>
         </Group>
           <div className='flex items-center gap-10 '>

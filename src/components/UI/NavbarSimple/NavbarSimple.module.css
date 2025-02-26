@@ -9,11 +9,11 @@
 
 .navbar {
   height: 700px;
-  width: 150px;
+  width: 200px;
   padding: var(--mantine-spacing-md);
   display: flex;
   flex-direction: column;
- 
+
   font-family: "Regular";
   padding-top: 25px;
 }
@@ -42,11 +42,11 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-size: var(--mantine-font-size-sm);
-  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-1));
+  font-size: 1.4vw;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.558);
   padding: var(--mantine-spacing-xs) var(--mantine-spacing-sm);
   border-radius: var(--mantine-radius-sm);
-  font-weight: 500;
 
   @mixin hover {
     background-color: light-dark(
@@ -74,8 +74,23 @@
 }
 
 .linkIcon {
-  color: light-dark(var(--mantine-color-gray-6), var(--mantine-color-dark-2));
+  /* color: light-dark(var(--mantine-color-gray-6), var(--mantine-color-dark-2)); */
   margin-right: var(--mantine-spacing-sm);
   width: 25px;
+  /* color: #CCCCCC; */
   height: 25px;
+
 }
+
+
+
+
+
+
+
+.link:nth-child(1) {
+  font-weight: 600;
+  color: black;
+}
+
+

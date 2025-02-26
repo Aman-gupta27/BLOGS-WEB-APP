@@ -3,7 +3,7 @@ import PopularBlog from "../UI/BlogSection/PopularBlog"
 
 const BlogCategory = () => {
   return (
-    <div className="w-[30%] h-full  py-10 px-10 ">
+    <div className="w-[23%]  ml-6 h-full  py-10 ">
         <PopularBlog />
         <CategoryBlog />
     </div>
