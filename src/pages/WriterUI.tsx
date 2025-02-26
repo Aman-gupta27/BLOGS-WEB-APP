@@ -7,7 +7,7 @@ const WriterUI = () => {
   return (
     <div className="h-screen w-full  relative">
       <Navbar />
-      <div className="h-[89.3%] px-5 w-full  flex gap-10 relative   ">
+      <div className="h-[89.3%]  w-full  flex gap-10 relative   ">
         <SideNav />
         <HomeContent />
         <BlogCategory />

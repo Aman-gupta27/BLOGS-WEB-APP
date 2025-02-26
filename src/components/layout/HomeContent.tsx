@@ -3,9 +3,9 @@ import { CiVideoOn } from "react-icons/ci";
 import { CommentSimple } from "../UI/CommentSimple/CommentSimple";
 const HomeContent = () => {
   return (
-    <div className="w-[50%]  py-5 px-6 overflow-y-auto ">
+    <div className="w-[65%]  py-5 px-6 overflow-y-auto ">
       <div>
-        <div className="w-[90%] rounded-xl py-6   px-7 h-[16vh] bg-zinc-100">
+        <div className="w-[90%] rounded-xl py-6 mt-5   px-7 h-[16vh] bg-zinc-100">
           <div className="flex gap-5">
             <div className="h-[5vh] w-[3vw] overflow-hidden border border-zinc-500 rounded-[50%] bg-red-100">
               <img
@@ -41,7 +41,7 @@ const HomeContent = () => {
       </div>
       </div>
 
-      <div className="w-full h-[30vh] flex bg-zinc-200 mt-5 gap-4 rounded-lg py-5 px-6">
+      <div className="w-full h-[25vh] flex bg-zinc-200 mt-5 gap-4 rounded-lg py-5 px-6">
 
 <CommentSimple/>
 <div className="h-[90%] w-[30%] bg-zinc-700 overflow-hidden rounded-md">
