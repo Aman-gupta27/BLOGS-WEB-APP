@@ -15,7 +15,11 @@ const CreateComment = () => {
               />
             </div>
             <div className="w-full h-10 flex items-center justify-between px-5 rounded-md bg-zinc-200">
-              <h3 className="text-zinc-400">Share Something...</h3>
+              <input
+                type="text"
+                placeholder="Share Something..."
+                className="placeholder:text-zinc-500 text-zinc-500 outline-none"
+              />
               <h4>😉</h4>
             </div>
           </div>

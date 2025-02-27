@@ -4,8 +4,8 @@ const HomeContent = () => {
   return (
     <div className="w-[57%]   py-5 px-6 overflow-y-auto ">
       <CreateComment />
-      <CommentBox />
-      <CommentBox />
+      <CommentBox className="mt-10" />
+      <CommentBox className="mt-10" />
     </div>
   );
 };
