@@ -5,7 +5,8 @@ const HomeContent = () => {
   return (
     <div className="md:w-[57%] w-full relative   py-5 px-6 overflow-y-auto ">
       <CreateComment />
-      <div className="bg-zinc-300 rounded-md p-1 absolute top-[24%] md:top-[25%] md:right-[17%] inline-block ">
+      <hr className="w-[90%] mt-9 md:mt-9   text-zinc-300" />
+      <div className="bg-zinc-300 md:mt-2 rounded-md p-1 absolute top-[26%] md:top-[25%] md:right-[17%] inline-block ">
         <div className="flex items-center gap-2 ">
           <h5>sort by: </h5>
           <h2>Recent</h2>

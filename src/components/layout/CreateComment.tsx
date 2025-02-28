@@ -34,7 +34,7 @@ const CreateComment = () => {
             </div>
           </div>
         </div>
-        <hr className="w-[90%] mt-7 text-zinc-300" />
+      
       </div>
     </>
   );
