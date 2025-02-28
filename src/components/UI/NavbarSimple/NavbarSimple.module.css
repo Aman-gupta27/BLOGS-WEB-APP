@@ -13,7 +13,6 @@
   padding: var(--mantine-spacing-md);
   display: flex;
   flex-direction: column;
-
   font-family: "Regular";
   padding-top: 25px;
 }
@@ -94,3 +93,9 @@
 }
 
 
+
+@media (max-width: 767px) {
+  .navbar{
+    display: none;
+  }
+}

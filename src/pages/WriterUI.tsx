@@ -2,6 +2,7 @@ import Navbar from "../components/layout/Navbar";
 import SideNav from "../components/layout/SideNav";
 import HomeContent from "../components/layout/HomeContent";
 import BlogCategory from "../components/layout/BlogCategory";
+import MobileBottomdiv from "../components/layout/MobileBottomdiv";
 
 const WriterUI = () => {
   return (
@@ -12,6 +13,7 @@ const WriterUI = () => {
         <HomeContent />
         <BlogCategory />
       </div>
+      <MobileBottomdiv/>
     </div>
   );
 };

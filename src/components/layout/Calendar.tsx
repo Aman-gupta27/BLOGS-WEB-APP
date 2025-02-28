@@ -1,31 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { SlArrowDown } from "react-icons/sl";
+import { SlArrowRight } from "react-icons/sl";
+import { SlArrowLeft } from "react-icons/sl";
+import { SlArrowUp } from "react-icons/sl";
 
 const Calendar: React.FC = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
 
   // Navigate to the previous month
   const handlePrevMonth = () => {
-    setCurrentDate(prevDate => new Date(prevDate.getFullYear(), prevDate.getMonth() - 1, 1));
+    setCurrentDate(
+      (prevDate) => new Date(prevDate.getFullYear(), prevDate.getMonth() - 1, 1)
+    );
   };
 
   // Navigate to the next month
   const handleNextMonth = () => {
-    setCurrentDate(prevDate => new Date(prevDate.getFullYear(), prevDate.getMonth() + 1, 1));
+    setCurrentDate(
+      (prevDate) => new Date(prevDate.getFullYear(), prevDate.getMonth() + 1, 1)
+    );
   };
 
   // Navigate to the previous year
   const handlePrevYear = () => {
-    setCurrentDate(prevDate => new Date(prevDate.getFullYear() - 1, prevDate.getMonth(), 1));
+    setCurrentDate(
+      (prevDate) => new Date(prevDate.getFullYear() - 1, prevDate.getMonth(), 1)
+    );
   };
 
   // Navigate to the next year
   const handleNextYear = () => {
-    setCurrentDate(prevDate => new Date(prevDate.getFullYear() + 1, prevDate.getMonth(), 1));
+    setCurrentDate(
+      (prevDate) => new Date(prevDate.getFullYear() + 1, prevDate.getMonth(), 1)
+    );
   };
 
   // Get the full name of the month
   const getMonthName = (date: Date) => {
-    return date.toLocaleString('default', { month: 'long' });
+    return date.toLocaleString("default", { month: "long" });
   };
 
   // Get the number of days in the current month
@@ -42,7 +54,11 @@ const Calendar: React.FC = () => {
   const renderCalendar = () => {
     const daysInMonth = getDaysInMonth(currentDate);
     const firstDayOfMonth = getFirstDayOfMonth(currentDate);
-    const lastDayOfPrevMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 0).getDate();
+    const lastDayOfPrevMonth = new Date(
+      currentDate.getFullYear(),
+      currentDate.getMonth(),
+      0
+    ).getDate();
     const days = [];
 
     // Add previous month's dates
@@ -77,7 +93,7 @@ const Calendar: React.FC = () => {
           <div
             key={`day-${index}`}
             className={`text-center p-2 rounded ${
-              isCurrentMonth ? 'text-black' : 'text-gray-400'
+              isCurrentMonth ? "text-black" : "text-gray-400"
             }`}
           >
             {day}
@@ -98,21 +114,21 @@ const Calendar: React.FC = () => {
           &lt;
         </button>
         <div className="flex items-center gap-2">
-          <h2 className="text-lg font-semibold">
+          <h2 className="text-lg ">
             {getMonthName(currentDate)} {currentDate.getFullYear()}
           </h2>
           <div className="flex flex-col  ">
             <button
               onClick={handleNextYear}
-              className="p-1 rounded-full rotate-180 hover:bg-red-100"
+              className="p-1 rounded-full  hover:bg-red-100"
             >
-              v
+            <SlArrowUp className="md:text-[8px]"/>
             </button>
             <button
               onClick={handlePrevYear}
               className="p-1 rounded-full hover:bg-gray-100"
-            >
-              v
+              >
+              <SlArrowDown className="md:text-[8px]"/>
             </button>
           </div>
         </div>
@@ -128,8 +144,8 @@ const Calendar: React.FC = () => {
       <div className="mt-4">
         {/* Weekday Labels */}
         <div className="grid grid-cols-7 gap-1 mb-1">
-          {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(day => (
-            <div key={day} className="text-center text-sm text-gray-600">
+          {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((day) => (
+            <div key={day} className="text-center font-[''] text-sm text-gray-600">
               {day}
             </div>
           ))}

@@ -5,9 +5,9 @@ const CreateComment = () => {
   return (
     <>
       <div>
-        <div className="w-[90%]  rounded-xl py-6 mt-5   px-7 h-[16vh] bg-zinc-100">
+        <div className="md:w-[90%]   rounded-xl py-6 mt-5   px-7 h-[16vh] bg-zinc-100">
           <div className="flex gap-5">
-            <div className="h-[6vh] w-[4vw] overflow-hidden border border-zinc-500 rounded-[50%] bg-red-100">
+            <div className="md:h-[6vh] md:w-[4vw] sm:h-[5vh] sm:w-[6vw] h-[5vh] w-[8vw]  overflow-hidden border border-zinc-500 rounded-[50%]">
               <img
                 className="h-full w-full object-cover"
                 src="https://images.unsplash.com/photo-1618077360395-f3068be8e001?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -34,7 +34,7 @@ const CreateComment = () => {
             </div>
           </div>
         </div>
-        <hr className="w-[90%] mt-4 text-zinc-300" />
+        <hr className="w-[90%] mt-7 text-zinc-300" />
       </div>
     </>
   );

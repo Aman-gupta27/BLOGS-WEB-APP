@@ -2,7 +2,7 @@ import { Avatar, Group, Text } from "@mantine/core";
 
 export function CommentSimple() {
   return (
-    <div className=" w-[70%] ">
+    <div className="  w-[70%] ">
       <Group>
         <Avatar
           className=""
@@ -17,7 +17,7 @@ export function CommentSimple() {
           </Text>
         </div>
       </Group>
-      <Text className="w-full  " pt="sm" size="md">
+      <Text className="md:w-full w-[85vw] sm:w-[90%]  " pt="sm" size="md">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores nobis quaerat earum, pariatur perferendis! Modi, esse fugiat nostrum a id quisquam odit totam voluptatum? Blanditiis assumenda debitis reiciendis odio.
       </Text>
     </div>
